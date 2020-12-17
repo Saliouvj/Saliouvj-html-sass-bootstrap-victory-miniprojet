@@ -9829,3 +9829,74 @@ a.text-rouge:hover, a.text-rouge:focus {
     border-color: #dee2e6;
   }
 }
+
+.banner {
+  background-image: url("../img/banner-bg.jpg");
+  height: 700px;
+  background-repeat: no repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grand-titre {
+  font-family: Spectral-LightItalic;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .img-box-1 {
+  height: 200px;
+  width: 300px;
+}
+
+.box .img-box-1 {
+  height: 200px;
+  width: 300px;
+}
+
+.rounded-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.reservation {
+  background-image: url("../img/book-bg.jpg");
+  height: 500px;
+  background-repeat: no repeat;
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.reservation .featured {
+  text-transform: uppercase;
+}
+
+.sign {
+  background-image: url("../img/signup-bg.jpg");
+  height: 500px;
+  background-repeat: no repeat;
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
