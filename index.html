@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <header class="titre">
         <div class=" text-center pt-3">
             <h1 class="grand-titre">Victory</h1>
@@ -74,22 +74,22 @@
         <div class="rounded-images">
             <div class="d-flex pt-5 mt-5">
                 <div class="mx-5">
-                    <img src="./public/img/cook_breakfast.png" alt="Breakfast">
+                    <img src="./public/img/cook_breakfast.png" alt="Breakfast" class="img-bkf">
                     <h5 class="pt-3">Breakfast</h5>
 
                 </div>
                 <div class="mx-5">
-                    <img src="./public/img/cook_lunch.png" alt="Lunch">
+                    <img src="./public/img/cook_lunch.png" alt="Lunch" class="img-lunch">
                     <h5 class="pt-3">Lunch</h5>
 
                 </div>
                 <div class="mx-5">
-                    <img src="./public/img/cook_dinner.png" alt="Dinner">
+                    <img src="./public/img/cook_dinner.png" alt="Dinner" class="img-dinner">
                     <h5 class="pt-3">Dinner</h5>
 
                 </div>
                 <div class="mx-5">
-                    <img src="./public/img/cook_dessert.png" alt="Dessert">
+                    <img src="./public/img/cook_dessert.png" alt="Dessert" class="img-dessert">
                     <h5 class="pt-3">Dessert</h5>
 
                 </div>
@@ -98,12 +98,13 @@
     </section>
     <!--fin section restaurant-->
     <!--debut section reservation-->
-    <div class="reservation d-flex flex-column justify-content-center ">
-        <h4 class="text-white text-uppercase">Book your table now</h4>
-        <div class="card  d-flex ">
-            <div class="row">
-                <img src="./public/img/book_left_image.jpg" alt="..." class="col-6 w-100">
+    <section class="table pt-5">
+        <div class="reservation">
+            <h4 class="text-white text-uppercase pt-5 pb-5">Book your table now</h4>
+            <div class="row book">
+                <img src="./public/img/book_left_image.jpg" alt="..." class="col-6">
                 <form class="col-6">
+                    <h3>Reservation</h3>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <select id="inputState" class="form-control">
@@ -111,7 +112,6 @@
                                 <option>...</option>
                             </select>
                         </div>
-
                         <div class="form-group col-6">
                             <select id="inputState" class="form-control">
                                 <option selected>Select hour</option>
@@ -129,28 +129,32 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-6 mt-5">
+                        <div class="col-6">
                             <select id="inputState" class="form-control">
                                 <option selected>How many persons</option>
                                 <option>...</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-rouge text-white">Download now</button>
+                        <button type="button" class="btn btn-rouge text-white col-6 pt-5 pb-5">Download now</button>
                     </div>
                 </form>
             </div>
-
         </div>
-    </div>
-    <h4>Get application now</h4>
+        <div class="get bg-rouge text-center p-5 text-white text-uppercase">
+            <h4>Get application now</h4>
+            <div>
+                <div><button type="button" class="btn btn-light text-rouge">Download now</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--SECTION FOOD-->
-    <section class="section-food">
-        <h2 class="featured">Weekly Featured Food</h2>
+    <section class="section-food text-center container pt-5">
+        <h2 class="featured align-items-center pb-5">Weekly Featured Food</h2>
         <div class="card-group">
             <div class="card">
                 <h4>Breakfast</h4>
-                <hr style="width: 80%;" class="justify-content-center">
                 <div class="price">
                     <img src="./public/img/breakfast_item.jpg" class="card-img-top" alt="...">
                     <span class="text-rouge"> $4.50</span>
@@ -163,7 +167,6 @@
             </div>
             <div class="card">
                 <h4>Lunch</h4>
-                <hr style="width: 80%;" class="justify-content-center">
                 <div class="price">
                     <img src="./public/img/lunch_item.jpg" class="card-img-top" alt="...">
                     <span class="text-rouge"> $7.50</span>
@@ -176,7 +179,6 @@
             </div>
             <div class="card">
                 <h4>Dinner</h4>
-                <hr style="width: 80%;" class="text-center">
                 <div class="price">
                     <div class="price"></div>
                     <img src="./public/img/dinner_item.jpg" class="card-img-top" alt="...">
@@ -191,12 +193,12 @@
         </div>
     </section>
     <!--SECTION BLOG-->
-    <section>
+    <section class=" section-blog text-center bg-blanche pt-5">
         <h2>OUR BLOG POST</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-2  pt-5 container m-0">
             <div class="col">
                 <div class="card">
-                    <img src="./public/img/blog_post_01.jpg" class="card-img-top" alt="...">
+                    <img src="./public/img/blog_item_01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Stumptown Tofu Schlitz</h5>
                         <p>Branding / Admin</p>
@@ -216,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pt-5">
                 <div class="card">
                     <img src="./public/img/blog_item_03.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -227,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pt-5">
                 <div class="card">
                     <img src="./public/img/blog_item_04.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -244,24 +246,27 @@
     <!--DEBUT FOOTER-->
     <section>
         <div class="sign">
-        <form class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" class="sr-only">Enter your email here...</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Enter your email here...">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">SEND MESSAGE</button>
-        </form>
+            <h5 class="news text-white justify-content-center d-flex">SIGNUP FOR OUR NEWSLETTERS</h5>
+            <form class="form-inline justify-content-center pt-5">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Enter your email here...</label>
+                    <input type="password" class="form-control" id="inputPassword2"
+                    placeholder="Enter your email here...">
+                </div>
+                <button type="submit" class="btn btn-outline-light  mb-2">SEND MESSAGE</button>
+            </form>
         </div>
-        <footer>
-            <div class="bg-blue">
-            <ul>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-invision"></i></a></li>
-                <li><a href=""><i class="fas fa-envelope"></i></a></li>
-            </ul>
-            <p>&copy; Lorem ipsum dolor sit amet.</p>
+        <footer class="bg-blue">
+            <div class=" d-flex row justify-content-center">
+                <p class="text-white col-4">&copy; 2020 Victory Template</p>
+                <ul class="icon d-flex col-6">
+                    <li><a href=""><i class="fab fa-twitter fa-border bg-light text-blue"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f fa-border bg-light text-blue"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram fa-border bg-light text-blue"></i></a></li>
+                    <li><a href=""><i class="fab fa-invision fa-border bg-light text-blue"></i></a></li>
+                    <li><a href=""><i class="fas fa-envelope fa-border bg-light text-blue"></i></a></li>
+                </ul>
+                <p class="text-white col">Design: TemplateMo</p>
             </div>
         </footer>
     </section>
